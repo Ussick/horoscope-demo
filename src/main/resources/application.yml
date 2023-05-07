@@ -1,0 +1,52 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:h2:mem:horoscopeDemo
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  mail:
+    host: smtp.ukr.net
+    username: ussick@ukr.net
+    password: PcDmTCQKtYKy7KTD
+    port: 465
+    protocol: smtps
+
+#  cloud:
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: localhost:9092
+#      bindings:
+#        user-producer-out-0:
+#          destination: my.forClientTwo.users
+#    function:
+#      definition: user-producer;
+
+
+
+
+
+horoscope:
+  url: "https://globalmsk.ru/personal/horoscope/68108"
+
+translator:
+  url: "https://script.google.com/macros/s/AKfycbwTlzyIgVWW4lO9Ev3VIXdO4q80I5ZO0jgh30EcAOhsO2hAipLP8Dt4PKBtC6Etx0ejXw/exec"
+  langFrom: "ru"
+  langTo: "uk"
+
+mail:
+  debug: true
+
+recaptcha:
+  secret: 6LecIkMhAAAAADfpiLLFY9_ei4BUpauFnP19rmCK

@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "username": "Фаина",
+  "day": 5,
+  "month": 9,
+  "year": 2000,
+  "password": "pass",
+  "email": "elena@gmail.com",
+  "gender": "female"
+
+}
